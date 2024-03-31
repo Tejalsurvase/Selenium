@@ -1,0 +1,68 @@
+Selenium WebDriver Architecture :
+- We can achieve all types of inheritance of Java by using this architecture
+- It has 4 interfaces :
+1) Search Context :
+- To search targeted elements on the webpage
+- It has two abstract methods :
+i) FindElement()--->single element in the webpage
+ii) FindElements()--->multiple elements in the webpage
+
+2) TakeScreenshot :
+- Used to take screenshots in selenium
+- It has two types of screenshots:
+i) Webpage
+ii)Webelement
+- Why?
+i) Add as a proof in a defect report
+ii) analysis of test script failure
+- It has only one abstract method---> getscreenshotAs()
+
+3)JavaScriptExecuter :
+- Purpose :
+i) to perform the scrolling operation-- vertically/horizontally
+ii) to perform action on disabled elements in webpages
+- It has two abstract methods :
+i) Executescript()
+ii)ExecuteAsynchscript()
+
+4)WebDriver :
+- It is also called as core interface in Selenium webdriver architecture
+- Purpose :
+i) Used to control the browser.
+- It has 11 abstract methods :
+i) get()
+ii) gettitle()
+ii) getcurrenturl()
+iv) getpagesource()
+v) getwindow handle()
+vi) getwindow handles()
+vii) close()
+viii) Quit()
+ix) manage()
+x) Navigate()
+xi) Switchto()
+
+Syllabus :
+1) Introduction
+2) Locators/selectors
+3) Webdriver
+4) Webelement
+5) Synchronization
+6) Takescreenshot
+7) JavaScript Executor
+8) Action class
+9) Select class
+10) Popups
+
+
+***How to see the HTML structure of a webpage?***
+------right click on the webpage---
+------ctrl + shift + i-------------
+
+
+
+
+
+
+
+

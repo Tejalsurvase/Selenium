@@ -1,0 +1,114 @@
+Locators -:
+SearchContext(interface) :
+- It is an interface that is used to search the element on the webpage.
+OR
+- It is used to identify elements on a webpage.
+- It has mainly two abstract methods :
+i) FindElement() :
+- to search single element on the webpage
+- with the help of locators it is going to search elements on the webpage
+- if the element is not found it will give an exception(NoSuchElementException)
+- return type is WebElement
+ii) FindElements()---> multiple elements on the webpage 
+
+***********LOCATORS/SELECTORS***********
+- Locators are search criteria through which we can find the elements in the webpage
+- Types of locators :
+1) id --->findelement() -->unique
+2) name --->findelement() -->unique
+3) class --->findelements() -->duplicate
+4) tagename --->findelements() -->duplicate
+5) linktext --->link
+6) partial linktext --->link
+7) CSS --->expression
+8) Xpath --->expression
+
+**) CSS :
+- when the element does not have an id, name, or class and it is not linked then we go for CSS
+- Syntax: tagname[Atttribute name = 'Attribute value']
+*******DISADVANTAGES OF CSS LOCATOR*************
+1) It does not support text function
+2) Cannot perform backward traversing
+*********************ADVAB=NTAGES*************
+1) It is faster than Xpath
+
+
+**)Xpath
+- It is also known as XML path(extensible markup language)
+- It will provide the address of the element or path of the element
+- It is also one of the locators which is used to search elements on the webpage
+- It is used to exchange data between client and server
+- There are mainly two types of Xpath
+i) Absolute Xpath
+ii) Relative Xpath
+
+
+******RELATIVE XPATH*************
+- Writing the Xpath from any child of the HTML structure is known as relative Xpath
+- It is represented as '//'
+- It is short
+- It consumes less time
+- There are seven types of relative Xpath
+1) Xpath by attribute
+2) Xpath by text
+3) Xpath by contains
+4) Xpath by group index
+5) Independent and dependent Xpath
+6) Xpath by Axes
+7) Core relative Xpath
+
+************1)XPATH BY ATTRIBUTES**************
+
+**) Xpath by attribute supports AND, OR, NOT operation
+
+//tagname[@attribute_name='attribute_value']
+
+//tagname[@attribute_name1='attribute_value1' and @attribute_name2='attribute_value2']
+
+//tagname[@attribute_name1='attribute_value1' or @attribute_name2='attribute_value2']
+
+-------------Drawbacks--------
+*) when element is having only text at that time Xpath by attribute will not support
+*) It not support for partial attribute value
+
+
+************2) XPATH BY TEXT**********
+- Writing the relative Xpath by using text is called Xpath by text.
+- Syntax : //tagname[text()='textValue']
+- It is case-sensitive
+- we have to pass complete testField
+-----------Drawback-----------
+*) we have to pass complete textValue
+*) will not support is text is partially dynamic
+8) will not support for non-breakable space
+
+
+***************3) XPATH BY CONTAINS***********
+- Writing the relative Xpath by using partial textValue and partial attribute value is called Xpath by contains.
+- Syntax :
+1) Xpath by contains attribute
+//tagname[contains(@attributeName, 'partial attribute value')]
+2) Xpath by contains text
+//tagname[contains(text().'partial text value')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+src/test/java
+new - package(Basic) - class(Launch)
+import org.openqa.selenium.chrome.Chromedrome ; //(ctl+shift+O)
+//HOW TO  LAUNCH EMPTY BROWSER
+//CHROME BROWSER
+ChromeDriver driver = new ChromeDriver() ;
+driver.get("paste URL of any browser");
